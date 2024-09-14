@@ -1,0 +1,11 @@
+services:
+  database:
+    image: mcr.microsoft.com/mssql/server:latest
+    restart: no
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=AYClqt1893@
+    ports:
+      - "1433:1433"
+    volumes:
+      - D:\\Dev\\QLTV\\QLTV-DB:/var/opt/mssql/data
